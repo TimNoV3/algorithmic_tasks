@@ -1,7 +1,12 @@
+/**
+ * Дана строка, написать функцию которая за один проход по строке вернет первый
+ * символ встретившийся второй раз
+ */
+
 const firstRecurringChar = str => {
   let array = [];
   str = str.replace(/\s+/g, '');
-  console.log(str);
+  
   for (let el of str){
     if (array.includes(el)) {
       return el;
@@ -10,4 +15,11 @@ const firstRecurringChar = str => {
   }
 }
 
-console.log(firstRecurringChar('e g jrd g')); 
+
+
+
+
+
+console.log(firstRecurringChar("abcdefa") === "a")
+console.log(firstRecurringChar("gHRirHS") === "H")
+console.log(firstRecurringChar("e g jrd g") === "g")
