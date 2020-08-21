@@ -10,4 +10,6 @@ const waysToDecode = message => {
 }
 
 
-console.log(waysToDecode('11111111111'));
+console.log(waysToDecode('12345') === 3)
+console.log(waysToDecode('11111111111') === 144)
+console.log(waysToDecode('12345678901234') === 0)

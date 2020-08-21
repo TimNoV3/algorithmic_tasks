@@ -4,14 +4,14 @@
  */
 
 const firstRecurringChar = str => {
-  let array = [];
+  let voc = [];
   str = str.replace(/\s+/g, '');
   
   for (let el of str){
-    if (array.includes(el)) {
+    if (voc[el] === 1) {
       return el;
     }
-    else array.push(el);
+    else voc[el] = 1;
   }
 }
 
